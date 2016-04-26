@@ -1,0 +1,124 @@
+#+COLUMNS: %40ITEM(Task) %17Effort(Estimated Effort){:} %CLOCKSUM
+* Edward Mojalefa Motloung(9707135162087)
+* Tasks(20:01 22 Jan 2016)
+** Duration:
+*** (4 - 6 Hours).
+** [#A] Write down what you need to do:
+*** TODO Write a paragraph about how you went about solving the problem.
+I started by setting my platform in shape. I created a folder named Systemic Logic Capture Form,
+in it containing all the libraries, html files, css fils, javascript files, and
+text files related to this task.
+
+Firstly I created my index.html file which contained all the imports
+to my css and javascript files. This file also contains angular directories
+which defines the module that will be used for the project.
+
+- <html ng-app="ideaCapture">
+- <div ng-view></div>
+
+The ng-view angular directory defines to the angular module which
+part of the html it will display content.
+From this point on, it was a matter of creating the angular module indstance in app.js,
+create a means for the app to navigate between templates, create the angular
+view controllers in controller.js, and create the angular js services in facroty.js.
+I decided to use angular js as a javascript library because it is cutting edge and
+is basically compatible with many libraries which are proving to be worthy, Libraries
+such as knockoutjs, firebase, foundation and mysql through php.
+
+
+
+*** TODO Write down any challenges you faced.
+Creating the select dropdown that would house the category names, I realized that
+the value for each option was not specified.
+
+I don't know how to save images.
+
+*** TODO Write down how you solved those challenge.
+I went with passing integer as the
+value. An integer value will act as a category ID in a database structue.
+- tblCategory
+-- CategoryID (INT)
+-- Category Title (VARCHAR)
+
+Saving images:
+
+
+** [#B] Create and Idea Capture Form (HTML):
+*** TODO Implement the front-end using HTML, CSS, and JAVASCRIPT.
+*** Include the following fields.
+**** DONE Email Address:
+***** Type: Text input.
+**** DONE Idea Title.
+***** Type: Text input.
+**** Idea description
+***** Type: Textarea.
+**** DONE Idea category, dropdown.
+***** Values:
+****** Incremental(Changed to 1).
+****** Disruptive(Changed to 2).
+****** Radical(Changed to 3).
+**** HOLD Idea image.                                               :HOLD:
+***** Type: File select.
+***** Rules (ONLY!):
+****** jpg.
+****** png.
+****** gif.
+**** DONE Idea privacy.
+***** Type: Radio Button.
+***** Values:
+****** Private.
+****** Public.
+**** Terms and Conditions.
+***** Type: CheckBoxx.
+**** Submit.
+***** Type: Button.
+** [#B] Style the FORM.
+*** CSS Library: Foundation.
+Try creating the ionFrame.
+**** Ionframe:
+***** Model: Angular/ionic/phonegap.
+***** View: FramerJS.
+***** Control: Php Api.
+*** The FORM must be responsive.
+**** Cater for different screen sizes:
+***** Mobile.
+***** Tablet.
+***** Desktop.
+
+
+
+
+
+
+
+NOTE TO SELF - Remember Knockoutjs.com
+** [#B] Submit onclick function.
+*** Validation Requirements:
+**** Email Address
+***** REQUIRED.
+***** Must contain 1 @ charcater.
+***** Must contain atleast 1 .(period).
+**** Title
+***** REQUIRED.
+**** Description
+***** REQUIRED.
+**** Category
+***** REQUIRED.
+**** Terms nd Conditions
+***** REQUIRED.
+*** Validation failed
+**** Show error according to failed requirement.
+*** Validation passed
+**** POST to [[https:httpbin.org/post][bin]] using AJAX.
+**** Hide the form.
+**** Display JSON in div with a message.
+***** Message: "Your idea has been successfully posted."
+** [#C] Submission
+*** Submit using Git
+**** Push to Github
+*** Record nd Send repo link to Byran.
+*** Create a README.md
+**** Record the following:
+***** Choice of libraries/frameworks.
+***** Assumptions.
+***** How to run the code.

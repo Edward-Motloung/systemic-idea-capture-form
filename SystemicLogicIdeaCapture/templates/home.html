@@ -1,0 +1,51 @@
+<div class="body" style="width: 100%; height: 100%;">
+<h1 align="center" class="title">Send us your Idea.</h1>
+<div class="remodal-bg">
+	<a class="button openModal">Record your idea...</a>
+</div>
+
+<!-- MODAL -->
+
+	<div class="modal callout" style="width: 80%; left: 10%; border-radius: 10px;">
+	<div class="float-left">
+	<h5>Send us your idea...</h5>
+	</div>
+
+		<button id="close" class="button float-right"> 
+			<span class="show-for-sr">Close</span>
+			<span aria-hidden="true"><i class="fi-x"></i></span>
+		</button><br/>
+		
+		<input type="text" name="IdeaTitle" id="txtIdeaTitle" placeholder="Name your idea." ng-model="Title"/><label id="titleError"></label><br/>
+
+		<input type="text" name="Email" id="txtEmail" placeholder="Give us your email address" ng-model="Email"/><label id="emailError"></label><br/>
+
+		<select id="selIdeaCategory" ng-model="CategoryID" ng-options="option.name for option in options">
+		</select>
+
+		<input type="file" name="IdeaImage" id="ideaImage" ng-model="Image" accept=".jpg,.png,.gif" />
+
+		<textarea id="taDesc" name="ideaDesc" ng-model="Description" placeholder="Describe your Idea." rows="5"></textarea>
+
+		<form name="IdeaPrivacy">
+			<input type="radio" name="rdoPublic" value="public" ng-model="Privacy"/> Public
+			<input type="radio" name="rdoPrivate" value="private" ng-model="Privacy"/> Private
+		</form>
+
+		<input type="checkbox" name="chkTsnCs" ng-model="tnc">Terms and Conditions<br/>
+		<input type="submit" name="btnSubmit" ng-click="submitIdea()" class="expanded button" />
+	</div>
+
+	<div class="result callout"  align="center">
+		<label id="vtitle"></label>
+		<label id="vemail"></label>
+		<label id="vimage"></label>
+		<label id="vcategory"></label>
+		<label id="vdesc"></label>
+		<label id="vprivacy"></label>
+		<label id="vtnc"></label>
+	</div>
+</div>
+
+
+
