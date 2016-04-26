@@ -103,6 +103,7 @@ ideaCapture.controller('modalControler', function($scope, IdeaService){
 		}, "slow");
 		$('.body').css("background-color","#262626");
 		$('.title').hide();
+		hideResult();
 	});
 
 	$('#close').on('click', function(){
@@ -121,6 +122,9 @@ ideaCapture.controller('modalControler', function($scope, IdeaService){
 
 	function showResult(){
 		$('.result').show();
+	}
+	function hideResult(){
+		$('.result').hide();
 	}
 
 // ===== Show validations ===== //
