@@ -4,7 +4,11 @@ ideaCapture.config(['$routeProvider', function($routeProvider) {
 	$routeProvider.when('/',{
 		templateUrl: 'templates/home.html',
 		controller: 'modalControler'
-	}).otherwise({
+	}).when('/form',{
+		templateUrl: 'templates/form.html',
+		controller: 'formController'
+	})
+	.otherwise({
 		templateUrl: 'templates/error.html'
 	});
 }]);
