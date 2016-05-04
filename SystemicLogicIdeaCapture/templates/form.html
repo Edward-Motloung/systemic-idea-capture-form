@@ -1,7 +1,7 @@
-<div class="body" style="width: 100%; height: 100%;">
+<div class="body">
 <h1 align="center" class="title">Send us your Idea.</h1>
 <div class="">
-	<a class="button openModal">Record your idea...</a><a href="#/">Modal form</a>
+	<a class="button" href="#/">Modal form</a>
 </div>
 
 <!-- MODAL -->
@@ -10,11 +10,6 @@
 	<div class="float-left">
 	<h5>Send us your idea...</h5>
 	</div>
-
-		<button id="close" class="button float-right"> 
-			<span class="show-for-sr">Close</span>
-			<span aria-hidden="true"><i class="fi-x"></i></span>
-		</button><br/>
 		
 		<input type="text" name="IdeaTitle" id="txtIdeaTitle" placeholder="Name your idea." ng-model="Title"/><label id="titleError"></label><br/>
 
@@ -27,7 +22,7 @@
 
 		<textarea id="taDesc" name="ideaDesc" ng-model="Description" placeholder="Describe your Idea." rows="5"></textarea><label id="descError"></label><br/>
 
-		<form name="IdeaPrivacy">
+		<form name="IdeaPrivacy" class="fieldset">
 			<input type="radio" name="rdoPublic" value="public" ng-model="Privacy"/> Public
 			<input type="radio" name="rdoPrivate" value="private" ng-model="Privacy"/> Private
 			<label id="privacyError"></label>

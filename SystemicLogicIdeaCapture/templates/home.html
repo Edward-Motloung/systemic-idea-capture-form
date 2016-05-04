@@ -1,4 +1,4 @@
-<div class="body" style="width: 100%; height: 100%;">
+<div class="canvas">
 <h1 align="center" class="title">Send us your Idea.</h1>
 <div class="">
 	<a class="button openModal">Record your idea...</a><a href="#/form">Normal form</a>
@@ -27,7 +27,7 @@
 
 		<textarea id="taDesc" name="ideaDesc" ng-model="Description" placeholder="Describe your Idea." rows="5"></textarea><label id="descError"></label><br/>
 
-		<form name="IdeaPrivacy">
+		<form name="IdeaPrivacy" class="fieldset">
 			<input type="radio" name="rdoPublic" value="public" ng-model="Privacy"/> Public
 			<input type="radio" name="rdoPrivate" value="private" ng-model="Privacy"/> Private
 			<label id="privacyError"></label>
